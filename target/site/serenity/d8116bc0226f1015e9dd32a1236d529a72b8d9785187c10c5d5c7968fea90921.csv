@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Sign up form","Verify that the error message is shown when user enters email in the wrong format","SUCCESS","2022-05-14T18:49:00.323+07:00[Asia/Bangkok]","0.0","12.92"
+"Sign up form","Verify that the error message is shown when user leaves the email field blank","SUCCESS","2022-05-14T18:49:13.765+07:00[Asia/Bangkok]","0.0","11.61"
+"Sign up form","Verify that the error message is shown when user enters only spaces in the email field","SUCCESS","2022-05-14T18:49:25.486+07:00[Asia/Bangkok]","0.0","13.35"

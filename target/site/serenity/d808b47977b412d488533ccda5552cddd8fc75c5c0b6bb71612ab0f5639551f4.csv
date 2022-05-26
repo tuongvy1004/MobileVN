@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Add to cart","Verify that user is able to add products to cart when clicking the 'Thêm vào giỏ'button","SUCCESS","2022-05-15T21:00:20.214+07:00[Asia/Bangkok]","0.0","13.7"
+"Add to cart","Verify that product price is displayed correctly in the Cart","SUCCESS","2022-05-15T21:00:34.1+07:00[Asia/Bangkok]","0.0","8.85"
+"Add to cart","Verify that product name is displayed correctly in the cart","SUCCESS","2022-05-15T21:00:43.019+07:00[Asia/Bangkok]","0.0","9.58"
+"Add to cart","Verify that user is able to select the amount of product in the cart","SUCCESS","2022-05-15T21:00:52.691+07:00[Asia/Bangkok]","0.0","11.78"
+"Add to cart","Verify that product price must be greater than 0 in cart","FAILURE","2022-05-15T21:01:04.581+07:00[Asia/Bangkok]","0.0","11.46"
+"Add to cart","Verify that product is able to deleted when user clicks the Delete icon","SUCCESS","2022-05-15T21:01:16.344+07:00[Asia/Bangkok]","0.0","9.39"
+"Add to cart","Verify that total amount of the order is displayed correctly with product price of chosen products","SUCCESS","2022-05-15T21:01:25.81+07:00[Asia/Bangkok]","0.0","13.79"

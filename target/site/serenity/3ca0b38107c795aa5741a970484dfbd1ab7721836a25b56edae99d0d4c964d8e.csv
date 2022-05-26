@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login page","Verify that the error message is shown when user enters wrong format email","SUCCESS","2022-05-15T20:54:37.799+07:00[Asia/Bangkok]","0.0","11.57"

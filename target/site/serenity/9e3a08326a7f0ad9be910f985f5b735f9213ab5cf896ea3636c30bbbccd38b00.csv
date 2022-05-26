@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Sign up form","Verify that the error message is shown when user enters data less than 6 characters","SUCCESS","2022-05-14T18:48:35.93+07:00[Asia/Bangkok]","0.0","12.17"
+"Sign up form","Verify that the error message is shown when user enters email in the wrong format","SUCCESS","2022-05-14T18:49:00.323+07:00[Asia/Bangkok]","0.0","12.92"

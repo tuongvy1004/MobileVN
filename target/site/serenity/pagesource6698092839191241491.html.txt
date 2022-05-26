@@ -1,0 +1,613 @@
+<html lang="en"><head>
+        <!--đường dẫn link-->
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="tran huu thang">
+<link rel="icon" href="../../favicon.ico">
+
+<title>Trần Hữu Thắng - Mobile.vn</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/css.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/loading.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/navbar_fixed.js"></script>
+<script src="js/scroll_bottom.js"></script>
+<!--<script src = "js/hover.bootstrap.js"></script>-->
+<script src="processor/validate.js"></script>
+<script src="processor/comments/comment.js"></script>
+<script src="processor/contacts/contact.js"></script>
+<script src="processor/loadmoredatabase/loadmore.js"></script>
+<script src="processor/loadmore_product/loadmore_product.js"></script>
+<script src="processor/search/search.js"></script>
+<script src="processor/cart/cart.js"></script>
+<script src="processor/order/order.js"></script>
+<script src="processor/logout/logout.js"></script>
+<script src="processor/search_products/search_product.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="container ">
+                    <div class="row">
+                        <div class=" col-sm-3 col-md-3 col-lg-3">
+                            <a href="index.php" class="logo">
+                                <img src="upload/img/moblievn.png" alt="logo"></a>
+                        </div>
+                        <div class="col-xs-7 col-sm-12 col-xs-6 col-md-4 col-lg-4" id="search-top">
+                            <div class="input-group" id="serch-hiden">
+                                <input type="search" class=" form-control" data-toggle="modal" data-target="#search_modal" placeholder="Bạn cần tìm sản phẩm nào?">
+                                <span class="input-group-addon addon"><span class="fa fa-search"></span>
+                            </span></div>
+                        </div>
+                        <div class="col-lg-2 an">
+                            <div class="phone">
+                                <a href="#">
+                                    <span class=" fa  fa-2x fa-phone"></span>
+                                    <span class="text_red font-150">1900 9999</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-3 login-top">
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <!--login and cart-->
+                                    <a href="" class="btn btn-default" data-toggle="modal" data-target="#login">
+           <span class="glyphicon glyphicon-user"></span> <span class="header-login"> Đăng Nhập</span>
+           </a>                                </div>
+                                <button class="btn btn-default cart_modal">
+                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <span class="header-login">Giỏ Hàng</span> <kbd class="bg-danger"><span class="total_product text-danger">0</span></kbd>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END top header-->
+            <!-- body header -->
+            <nav class="navbar navbar-bg">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-home"></span>
+                        </button>
+                        <div class="logo-small">  <a href="index.php"><img src="upload/img/moblievn-small.png"></a></div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="product.php" class="active_index"> <span class="fa fa-2x fa-mobile header-icon"></span><span class="header-name"> Điện thoại</span></a></li>
+                            <li> <a href=""><span class="fa fa-tablet fa-2x header-icon"></span> <span class="header-name">Tablet </span></a></li>
+                            <li><a href=""><span class="fa fa-laptop fa-2x header-icon"></span><span class="header-name">Laptop</span></a></li>
+                            <li><a href=""><span class="fa fa-gift fa-2x header-icon"></span><span class="header-name">Khuyến mãi</span></a></li>
+                            <li><a href="news.php" class=""><span class="fa fa-book fa-2x header-icon"></span><span class="header-name">Tin tức</span></a></li>
+                            <li><a href="contact.php" class="<br />
+<b>Warning</b>:  Missing argument 2 for active_index(), called in D:\xampp\htdocs\mobilevn\include\header.php on line 76 and defined in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>258</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: link2 in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>262</b><br />
+"><span class="fa fa-question-circle fa-2x header-icon"></span><span class="header-name">Liên hệ</span></a></li>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </header><!-- Main component -->
+<div class="main">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="product.php">Product</a></li>
+            <li><a href="product_details.php">Product-deails</a></li>
+            <li class="active">Le Son</li>
+        </ol>
+        <!--END BEST SELLER-->
+        <div class="products">
+            <div class="row no-row">
+                <div class="col-md-8">
+                    <div id="product-details-sildeshow" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#product-details-sildeshow" data-slide-to="0" class="active"></li>
+                            <li data-target="#product-details-sildeshow" data-slide-to="1"></li>
+                            <li data-target="#product-details-sildeshow" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="first-slide slide-product-details" src="upload/download/27_blu-win-jr-01_story-760x400.jpg" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img class="second-slide slide-product-details" src="upload/download/1205.jpg" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#product-details-sildeshow" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#product-details-sildeshow" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-left: 10px;">
+                    <div class="name">Tình trạng: <span class="text-danger">(còn hàng)</span></div>
+                    <div class="name"><span class="text-primary font-150">Le Son</span></div>
+                    <div class="price-new"> Giá: -900đ</div>
+                    <div class="price-old"> Giá: -1,000đ</div>
+                    <div class="promotion ">
+                        <div class="title-pro">Khuyến mãi</div>
+                        <div class="title-quangtang">
+                            <p>- 10% Khi mua online </p>
+                            <p>- Khuyến mại gói trả trước: Trị giá khuyến mại tới 2.500.000đ<br>
+                                - Khuyến mại gói trả sau: Giảm 50% cước thuê bao gói iPhone hàng tháng trong vòng 12 tháng hoặc 24 tháng
+                        </p></div>
+                    </div><button class="btn btn-danger btn-block name-big cart_class" title="372">Thêm vào giỏ hàng<br><span>(Click vào giỏ hàng để thanh toán)</span></button>
+                </div>
+                <div class="col-md-8">
+                    <div class="list-tab">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-title">
+                            <li><a href="#home"><span class="">Chi tiết</span> <span class="fa fa-search-plus "></span></a></li>
+                            <li><a href="#messages"><span class="">Bình luận</span> <span class="fa fa-comments "></span>
+                                    <span class="label label-danger">
+                                        0                                    </span></a>
+                            </li>
+                        </ul>
+                        <div class="tab-pane active" id="home">
+                            <div class="title-tab">
+                                <h3 class="text-danger">Chi tiết sản phẩm:</h3>
+                                <p>Ở đây không bán điện thoại</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages">
+                            <div class="title-tab">
+                                <h3 class="text-danger">Bình luận:</h3>
+                                <div class="row comments">
+                                    <div class="col-md-12">
+                                        <div id="error_comment"></div>
+                                        <div class="form-group" id="e_cm">
+                                            <label for="name">Comment: <span class="text-danger">*</span> <span id="t_cm"></span><span id="s_cm"></span> </label>
+                                            <textarea class="form-control" rows="3" id="comment" placeholder="Viết bình luận của bạn..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12"> <button type="button" id="pid_372" class="btn btn-danger button_comment" style="display: none;">Comment</button></div>
+                                </div>
+                                <!-- comment-->
+                                <div class="comment_list" style="padding-bottom: 30px;">
+                                    <div class="col-md-12 text-center"><label class="text-info text-center font-150">Xin mời bạn đánh giá về sản phẩm <span class="text-danger"> Le Son.</span></label></div>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-left: 10px;">
+                    <div class="best-seller">
+                        <div class="best-title">
+                            <label>Tư vấn miễn phí:</label>
+                        </div>
+                        <div class="email-collect text-center" id="email-collect">
+                            <h4>Nhập thông tin của bạn. </h4>
+                            <form role="form" action="" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nhập email hoặc Số điện thoại">
+                                </div>
+                                <input type="submit" class="btn btn-danger" value="Nhận thông tin">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hidden-xs" style="padding-left: 10px;">
+                    <div class="best-seller">
+                        <div class="best-title">
+                            <label>Sản phẩm cùng loại</label>
+                            <a href="product_details.php" class="pull-right">Xem Thêm <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="row no-row">
+                            <!--sản phẩm cùng loại-->
+                                                        <div class="best-seller">
+                                <div class="qc">
+                                    <img src="upload/img/qc.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="main-footer">
+                    <p class="logo-footer"><a href="index.php" class="logo">
+                            <img src="upload/img/moblievn.png" alt="logo"></a><br><br></p>
+                    <h4 class="logo-footer">Địa chỉ: Quang Trung Hải Châu Đà Nẵng</h4>
+                    <p class="logo-footer">Đăng ký doanh nghiệp số 0000000000,
+                        do Sở Kế hoạch và Đầu tư Hà Nội cấp lần đầu ngày 01/01/2015,
+                        thay đổi lần thứ 30 ngày 01/01/2015.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="main-footer">
+                    <h4>Mobile Việt Nam</h4>
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tư vấn sử dụng</a></li>
+                        <li><a href="">Tin tức Moblie VN</a></li>
+                        <li><a href="">Tin tức khuyến mãi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="main-footer">
+                    <h4>DỊCH VỤ &amp; HỖ TRỢ</h4>
+                    <ul>
+                        <li><a href="">Những câu hỏi thường gặp</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                        <li><a href="">Hướng dẫn đặt hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="main-footer">
+                    <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                    <a href="tel:01636551270">Tư vấn bảo hành: <span class="text_red">01636 551 270</span></a><br>
+                    <a href="mailto:tranthang212@gmail.com">Email: <span class="text_red">tranthang212@gmail.com</span></a>
+                    <h4>Chia sẻ</h4>
+                    <div class="icon">
+                        <ul>
+                            <li><a href="http://www.facebook.com/tranthang212" target="_bland"><span class="fa fa-facebook-official fa-3x"></span></a></li>
+                            <li><a href="mailto:tranthang212@gmail.com"><span class="fa fa-google-plus-square fa-3x"></span></a></li>
+                            <li><a href="http://www.twiter.com/kingker93" target="_bland"><span class="fa fa-twitter-square fa-3x"></span></a></li>
+                            <li><a href=""><span class="fa fa-youtube-square fa-3x"></span></a></li>
+                            <li><a href=""><span class="fa fa-instagram fa-3x"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="goTop">
+        <a> <span class="fa fa-5x fa-angle-double-up"></span> </a>
+    </div>
+    <!--< CHAT BOX-->
+    <!--    <div class="phone-bot">
+            <a href="#email-collect"><button class="btn btn-danger">Nhận thông tin</button></a>
+            <a href="#"><button class="btn btn-danger">Tư vấn miễn phí</button></a>
+        </div>-->
+</footer>
+<!--fixed top nav-->
+<nav class="navbar navbar-bg navbar-fixed-top" id="nav-fixed-hidden" style="display: none;">
+    <div class="container">
+        <div class="row no-row">
+            <div class="col-sm-6 col-md-8 poul-left ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-home"></span>
+                </button>
+                <div class="col-sm-3 col-md-3 nav-fixed">
+                    <a href="index.php"><img style="padding-top:5px;" src="upload/img/moblievn-small.png"></a>
+                </div>
+                <div class="col-sm-4 col-md-4 nav-fixed ">
+                    <div class="input-group" id="serch-hiden">
+                        <input type="search" class=" form-control" data-toggle="modal" data-target="#search_modal" placeholder="Tìm kiếm...">
+                        <span class="input-group-addon addon"><span class="fa fa-search"></span>
+                    </span></div>
+                </div>
+                <div class="col-sm-4 col-md-5 nav-fixed">
+                    <div class=" pull-right">
+                        <div class="btn-group">
+                            <div class="btn-group">
+                                                                <a href="" class="btn btn-default" data-toggle="modal" data-target="#login">
+                                        <span class="glyphicon glyphicon-user"></span> <span class="header-login"> Đăng Nhập</span>
+                                        </a>                            </div>
+                            <button class="btn btn-default cart_modal">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <span class="header-login">Giỏ Hàng</span> <kbd class="bg-danger"><span class="total_product text-danger">0</span></kbd>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="product.php" class="active_index"><span class="fa fa-2x fa-mobile header-icon"></span></a></li>
+                        <li> <a href=""><span class="fa fa-tablet fa-2x header-icon"></span></a></li>
+                        <li><a href=""><span class="fa fa-laptop fa-2x header-icon"></span></a></li>
+                        <li><a href=""><span class="fa fa-gift fa-2x header-icon"></span></a></li>
+                        <li><a href="news.php" class=""><span class="fa fa-book fa-2x header-icon"></span></a></li>
+                        <li><a href="contact.php" class="<br />
+<b>Warning</b>:  Missing argument 2 for active_index(), called in D:\xampp\htdocs\mobilevn\include\navbar_fixed_top.php on line 97 and defined in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>258</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: link2 in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>262</b><br />
+"><span class="fa fa-question-circle fa-2x header-icon"></span></a></li>
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+</nav><!--modal-->
+<!--loading-->
+<div id="circularG" class="loading_ajax" style="display: none;">
+    <div id="circularG_1" class="circularG"></div>
+    <div id="circularG_2" class="circularG"></div>
+    <div id="circularG_3" class="circularG"></div>
+    <div id="circularG_4" class="circularG"></div>
+    <div id="circularG_5" class="circularG"></div>
+    <div id="circularG_6" class="circularG"></div>
+    <div id="circularG_7" class="circularG"></div>
+    <div id="circularG_8" class="circularG"></div>
+</div>
+<!--end loading-->
+<!--modal login-->
+<div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Đăng nhập</h4>
+            </div>
+            <div class="modal-body">
+                <div class=" text-center" id="error_lg"></div>
+                <form action="" method="POST" id="form_lg">
+                    <div class="form-group" id="e_p_t_lg">
+                        <label for="name">Email hoặc SDT : <span class="text-danger">*</span> <span id="e_p_e_lg"></span> <span id="e_p_s_lg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="e_p_lg" class="form-control" id="e_p_lg" placeholder="Nhập email hoặc số điện thoại(*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-envelope"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pass_t_lg">
+                        <label for="name">Mật khẩu: <span class="text-danger">*</span> <span id="pass_e_lg"></span> <span id="pass_s_lg"></span></label>
+                        <div class="input-group">
+                            <input type="password" name="pass_lg" class="form-control" id="pass_lg" placeholder="Nhập mật khẩu (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-file"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="tick_lg" value=""> Remember
+                        </label>
+                    </div>
+                    <input type="button" name="login" id="submit_lg" class="btn btn-danger" value="Đăng nhập">
+                    <input type="button" class="btn btn-default pull-right" data-dismiss="modal" value="Thoát">
+                    <div class="margin-top margin-bottom">
+                        <a href="" data-toggle="modal" data-target="#forgotpass" data-dismiss="modal">Quên mật khẩu</a>
+                    </div>
+                    <div class="margin-top margin-bottom">
+                        <a href="" data-toggle="modal" data-target="#register" data-dismiss="modal">Đăng ký tài khoản mới</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end login-->
+<!--register-->
+<div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Đăng ký </h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert-danger text-center" id="error_rg"></div>
+                <form action="" method="POST" id="form_rg">
+                    <div class="form-group" id="name_t_rg">
+                        <label>Họ và tên: <span class="text-danger">*</span> <span id="name_e_rg"></span>  <span id="name_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="name_rg" id="name_rg" class="form-control" placeholder="Nhập tên (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-user"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="email_t_rg">
+                        <label for="name">Email: <span class="text-danger">*</span> <span id="email_e_rg"></span> <span id="email_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="email_rg" class="form-control" id="email_rg" placeholder="Nhập email (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-envelope"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="phone_t_rg">
+                        <label for="name">SDT: <span class="text-danger">*</span> <span id="phone_e_rg"></span><span id="phone_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="phone_rg" class="form-control" id="phone_rg" placeholder="Nhập Số điện thoại (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-phone"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pass_t_rg">
+                        <label for="name">Mật khẩu: <span class="text-danger">*</span> <span id="pass_e_rg"></span> <span id="pass_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="password" name="pass_rg" class="form-control" id="pass_rg" placeholder="Nhập mật khẩu (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-file"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="c_pass_t_rg">
+                        <label for="name">Nhập lại mật khẩu: <span class="text-danger">*</span> <span id="c_pass_e_rg"></span><span id="c_pass_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="password" name="c_pass_rg" class="form-control" id="c_pass_rg" placeholder="Nhập lại mật khẩu (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-paste"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <input type="button" id="submit_rg" class="btn btn-danger" value="Đăng ký">
+                    <input type="button" class="btn btn-default pull-right" data-dismiss="modal" value="Thoát">
+                </form>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#login" data-dismiss="modal">Đăng nhập</a>
+                </div>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#forgotpass" data-dismiss="modal">Quên mật khẩu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end register-->
+<!--modal fogotpass-->
+<div class="modal fade" id="forgotpass" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Quên mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert-danger text-center" id="error_fg"></div>
+                <form action="" method="POST" id="form_fg">
+                    <div class="form-group" id="email_t_fg">
+                        <label for="name">Email: <span class="text-danger">*</span><span id="email_e_fg"></span> <span id="email_s_fg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="email_fg" class="form-control" id="email_fg" placeholder="Nhập email (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-envelope"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <input type="button" id="submit_fg" class="btn btn-danger" value="Gửi">
+                    <input type="button" class="btn btn-default pull-right" data-dismiss="modal" value="Thoát">
+                </form>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#login" data-dismiss="modal">Đăng nhập</a>
+                </div>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#register" data-dismiss="modal">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  fogotpass-->
+<!--modal search-->
+<div class="modal fade" id="search_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Tìm kiếm</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Tìm kiếm với từ khoá: <span id="search_title" class="text-danger"></span></label>
+                    <div class="input-group">
+                        <input type="text" name="search" class="form-control" maxlength="20" id="search" tabindex="1" placeholder="Top tìm kiếm: Iphone, Samsung, Lumia..." value="">
+                        <span class="input-group-addon "><span class="fa fa-search"></span>
+                        </span>
+                    </div>
+                    <div id="search_show">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  search-->
+<!--modal cart -->
+<div class="modal fade" id="cart_modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Giỏ hàng của bạn <span class="total_product">0</span> sản phẩm</h4>
+            </div>
+            <div class="modal-body">
+                <div id="view_cart">
+            <div class="row">
+            <div class="col-md-12 text-center text-danger">
+                <span class="fa fa-5x fa-remove"></span>
+                <h1>Vui lòng chọn sản phẩm</h1>
+            </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-6 col-sm-6 col-md-6">
+                        <button class="btn btn-success btn-block btn-lg" data-dismiss="modal"><i class="fa fa-long-arrow-left"></i> Mua tiếp sản phẩm <i class="fa fa-long-arrow-left"></i></button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                        <button class="btn btn-danger btn-block btn-lg disabled"><i class="fa fa-long-arrow-right"></i> Đặt hàng ngay <i class="fa fa-long-arrow-right"></i></button>
+                </div>
+           </div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  cart-->
+<!--modal order -->
+<div class="modal fade" id="order_modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Đặt Hàng</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-md-12" id="error_od"></div>
+                    <div class="col-sm-6 col-md-6 ">
+                        <div class="col-md-12 text-center">
+                            <label class="text-info font-150"> Danh sách sản phẩm</label>
+                        </div>
+                        <div id="list_order"></div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 information">
+                        <div class="col-md-12 text-center">
+                            <label class="text-info font-150"> Thông tin khách hàng</label>
+                        </div>
+                        <div id="user_order"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-default btn-block btn-success btn-lg" id="cancel_order"><i class="fa fa-long-arrow-left"></i> Trở về <i class="fa fa-long-arrow-left"></i></button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-default btn-danger btn-block btn-lg" id="order_success"><i class="fa fa-long-arrow-right"></i> Thanh toán <i class="fa fa-long-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  order-->
+<!--modal success -->
+<div class="modal fade" id="success_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center text-success">
+                        <span class="fa fa-5x fa-check-square"></span>
+                        <h1>Đặt hàng thành công</h1>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h4>Cảm cơn bạn <span class="text-danger"><br>
+<b>Warning</b>:  Illegal string offset 'name' in <b>D:\xampp\htdocs\mobilevn\include\modal.php</b> on line <b>249</b><br>
+R</span> đã tin dùng sản phẩm của chúng tôi</h4>
+                        <h4>Chúng tôi sẽ liên hệ với bạn trong vòng 5 phút.<br> Và giao hàng trong 30 phút.</h4>
+                        <a href="" class="btn btn-success continue">Tiếp tục xem </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  success--><!--chat zompim-->
+
+</body></html>

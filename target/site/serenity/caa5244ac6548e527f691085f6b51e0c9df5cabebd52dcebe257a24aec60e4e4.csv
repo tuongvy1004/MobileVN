@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Sign up form","Verify that the error message is shown when user leaves the full name blank","SUCCESS","2022-05-14T18:48:23.452+07:00[Asia/Bangkok]","0.0","12.41"
+"Sign up form","Verify that the error message is shown when user enters data less than 6 characters","SUCCESS","2022-05-14T18:48:35.93+07:00[Asia/Bangkok]","0.0","12.17"
+"Sign up form","Verify that the error message is shown when user enters only spaces in the Full name field","SUCCESS","2022-05-14T18:48:48.502+07:00[Asia/Bangkok]","0.0","11.4"

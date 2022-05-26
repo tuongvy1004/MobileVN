@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Sign up form","Verify that the error message is shown when user enters only spaces in the email field","SUCCESS","2022-05-14T18:49:25.486+07:00[Asia/Bangkok]","0.0","13.35"

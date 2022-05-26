@@ -1,0 +1,1066 @@
+<html lang="en"><head>
+        <!--đường dẫn link-->
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="tran huu thang">
+<link rel="icon" href="../../favicon.ico">
+
+<title>Trần Hữu Thắng - Mobile.vn</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/css.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/loading.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/navbar_fixed.js"></script>
+<script src="js/scroll_bottom.js"></script>
+<!--<script src = "js/hover.bootstrap.js"></script>-->
+<script src="processor/validate.js"></script>
+<script src="processor/comments/comment.js"></script>
+<script src="processor/contacts/contact.js"></script>
+<script src="processor/loadmoredatabase/loadmore.js"></script>
+<script src="processor/loadmore_product/loadmore_product.js"></script>
+<script src="processor/search/search.js"></script>
+<script src="processor/cart/cart.js"></script>
+<script src="processor/order/order.js"></script>
+<script src="processor/logout/logout.js"></script>
+<script src="processor/search_products/search_product.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>    <script type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps-api-v3/api/js/48/12/common.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps-api-v3/api/js/48/12/util.js"></script></head>
+    <body class="modal-open" style="padding-right: 17px;">
+        <header>
+            <div class="top-header">
+                <div class="container ">
+                    <div class="row">
+                        <div class=" col-sm-3 col-md-3 col-lg-3">
+                            <a href="index.php" class="logo">
+                                <img src="upload/img/moblievn.png" alt="logo"></a>
+                        </div>
+                        <div class="col-xs-7 col-sm-12 col-xs-6 col-md-4 col-lg-4" id="search-top">
+                            <div class="input-group" id="serch-hiden">
+                                <input type="search" class=" form-control" data-toggle="modal" data-target="#search_modal" placeholder="Bạn cần tìm sản phẩm nào?">
+                                <span class="input-group-addon addon"><span class="fa fa-search"></span>
+                            </span></div>
+                        </div>
+                        <div class="col-lg-2 an">
+                            <div class="phone">
+                                <a href="#">
+                                    <span class=" fa  fa-2x fa-phone"></span>
+                                    <span class="text_red font-150">1900 9999</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-3 login-top">
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <!--login and cart-->
+                                    <a href="" class="btn btn-default" data-toggle="modal" data-target="#login">
+           <span class="glyphicon glyphicon-user"></span> <span class="header-login"> Đăng Nhập</span>
+           </a>                                </div>
+                                <button class="btn btn-default cart_modal">
+                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <span class="header-login">Giỏ Hàng</span> <kbd class="bg-danger"><span class="total_product text-danger">0</span></kbd>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END top header-->
+            <!-- body header -->
+            <nav class="navbar navbar-bg">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-home"></span>
+                        </button>
+                        <div class="logo-small">  <a href="index.php"><img src="upload/img/moblievn-small.png"></a></div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="product.php" class=""> <span class="fa fa-2x fa-mobile header-icon"></span><span class="header-name"> Điện thoại</span></a></li>
+                            <li> <a href=""><span class="fa fa-tablet fa-2x header-icon"></span> <span class="header-name">Tablet </span></a></li>
+                            <li><a href=""><span class="fa fa-laptop fa-2x header-icon"></span><span class="header-name">Laptop</span></a></li>
+                            <li><a href=""><span class="fa fa-gift fa-2x header-icon"></span><span class="header-name">Khuyến mãi</span></a></li>
+                            <li><a href="news.php" class=""><span class="fa fa-book fa-2x header-icon"></span><span class="header-name">Tin tức</span></a></li>
+                            <li><a href="contact.php" class="<br />
+<b>Warning</b>:  Missing argument 2 for active_index(), called in D:\xampp\htdocs\mobilevn\include\header.php on line 76 and defined in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>258</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: link2 in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>262</b><br />
+"><span class="fa fa-question-circle fa-2x header-icon"></span><span class="header-name">Liên hệ</span></a></li>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </header><div class="main">
+    <div class="container">
+        <div id="home-sildeshow" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#home-sildeshow" data-slide-to="0" class=""></li>
+                <li data-target="#home-sildeshow" data-slide-to="1" class=""></li>
+                <li data-target="#home-sildeshow" data-slide-to="2" class="active"></li>
+                <li data-target="#home-sildeshow" data-slide-to="3" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <img class="first-slide slide-index" src="upload/download/55002953ae427.png" alt="First slide">
+                </div>
+                <div class="item">
+                    <img class="second-slide slide-index" src="upload/download/2575-SUMMER-SIZZLERS-WEB-CAROUSEL-IOM.jpg" alt="Second slide">
+                </div>
+                <div class="item active">
+                    <img class="third-slide slide-index" src="upload/download/2667-SUMMER-SIZZLER-WEB-CAROUSEL-V2.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                    <img class="third-slide slide-index" src="upload/download/Ifix-Web-Slider-11-1140x350.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#home-sildeshow" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#home-sildeshow" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Main component  -->
+        <div class="best-seller">
+            <div class="best-title">
+                <label>Top bán chạy nhất:</label>
+                <a href="product.php" class="pull-right">Xem Thêm <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="row no-row">
+                <!--top sản phẩm-->
+                                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="thumbnail">
+                                <a href="product_details.php?pid=2" class="no-link">
+                                    <img src="upload/img/product/153266669455d5ab3b08010.png"></a>
+                                <div class="caption text-center products-content">
+                                    <div class="products-content-label">
+                                        <a href="product_details.php?pid=2" class="no-link">
+                                            <p>iphone</p>
+                                        </a>
+                                        <p class="text-danger"><span class="hidden-xs"> Giá: </span> 5,355,350đ</p>
+                                        <button class="btn btn-danger cart_class" title="2">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="thumbnail">
+                                <a href="product_details.php?pid=23" class="no-link">
+                                    <img src="upload/img/product/96921592555d5a3ed114ad.jpg"></a>
+                                <div class="caption text-center products-content">
+                                    <div class="products-content-label">
+                                        <a href="product_details.php?pid=23" class="no-link">
+                                            <p>iphone 6</p>
+                                        </a>
+                                        <p class="text-danger"><span class="hidden-xs"> Giá: </span> 15,000,000đ</p>
+                                        <button class="btn btn-danger cart_class" title="23">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="thumbnail">
+                                <a href="product_details.php?pid=3" class="no-link">
+                                    <img src="upload/img/product/851310855d5aafa22711.jpg"></a>
+                                <div class="caption text-center products-content">
+                                    <div class="products-content-label">
+                                        <a href="product_details.php?pid=3" class="no-link">
+                                            <p>samsung</p>
+                                        </a>
+                                        <p class="text-danger"><span class="hidden-xs"> Giá: </span> 53,534đ</p>
+                                        <button class="btn btn-danger cart_class" title="3">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="thumbnail">
+                                <a href="product_details.php?pid=11" class="no-link">
+                                    <img src="upload/img/product/62179015655d5aa09d4f8a.png"></a>
+                                <div class="caption text-center products-content">
+                                    <div class="products-content-label">
+                                        <a href="product_details.php?pid=11" class="no-link">
+                                            <p>iphone</p>
+                                        </a>
+                                        <p class="text-danger"><span class="hidden-xs"> Giá: </span> 5,355,350đ</p>
+                                        <button class="btn btn-danger cart_class" title="11">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="thumbnail">
+                                <a href="product_details.php?pid=27" class="no-link">
+                                    <img src="upload/img/product/122934470055d59a2b60ac2.png"></a>
+                                <div class="caption text-center products-content">
+                                    <div class="products-content-label">
+                                        <a href="product_details.php?pid=27" class="no-link">
+                                            <p>zend fone 5</p>
+                                        </a>
+                                        <p class="text-danger"><span class="hidden-xs"> Giá: </span> 1,500,000đ</p>
+                                        <button class="btn btn-danger cart_class" title="27">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="thumbnail">
+                                <a href="product_details.php?pid=6" class="no-link">
+                                    <img src="upload/img/product/89749176355d5aac8b574f.png"></a>
+                                <div class="caption text-center products-content">
+                                    <div class="products-content-label">
+                                        <a href="product_details.php?pid=6" class="no-link">
+                                            <p>samsung 2</p>
+                                        </a>
+                                        <p class="text-danger"><span class="hidden-xs"> Giá: </span> 53,534đ</p>
+                                        <button class="btn btn-danger cart_class" title="6">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        <!--end top sản phẩm-->
+            </div>
+        </div>
+        <!--END BEST SELLER-->
+        <div class="products">
+            <div class="row no-row">
+                <div class="col-md-8">
+                    <div class="best-title">
+                        <label>Sản phẩm nỗi bật:</label>
+                        <a href="product.php" class="pull-right">Xem Thêm <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="row no-row product_list">
+
+                        <!--sản phẩm nỗi bật-->
+                                                        <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=479" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=479" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="479" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=478" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=478" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="478" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=477" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=477" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="477" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=476" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=476" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="476" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=475" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=475" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="475" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=474" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=474" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="474" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=473" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=473" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="473" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=472" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=472" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="472" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=471" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=471" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="471" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=470" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=470" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="470" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=469" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=469" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="469" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=468" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=468" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="468" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=467" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=467" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="467" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=466" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=466" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="466" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=465" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=465" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="465" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=464" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=464" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="464" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=463" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=463" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="463" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=462" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=462" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="462" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=461" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=461" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="461" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="thumbnail">
+                                        <a href="product_details.php?pid=460" class="no-link">
+                                            <img src="upload/img/product/"></a>
+                                        <div class="caption text-center products-content">
+                                            <div class="products-content-label">
+                                                <a href="product_details.php?pid=460" class="no-link">
+                                                    <p></p>
+                                                </a>
+                                                <p class="text-danger"><span class="hidden-xs"> Giá: </span> 0đ</p>
+                                                <button class="btn btn-danger cart_class" title="460" disabled="">
+                                                    <i class="glyphicon glyphicon-shopping-cart"></i> <span class="cart">Thêm vào giỏ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div id="show_more_main_product460">
+                                <button title="460" class="show_more_product btn btn-info btn-block " style="margin-top: 10px;"> Xêm thêm
+                                    <span class="fa fa-angle-double-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--kết thúc sản phẩm nỗi bật-->
+                </div>
+                <div class="col-md-4" style="padding-left: 10px;">
+                    <!--tin tức-->
+                    <div class="best-title">
+                        <label>Tin tức nỗi bật:</label>
+                        <a href="news.php" class="pull-right">Xem Thêm <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="main-blog">
+                                                        <div class="blog">
+                                    <a href="post.php?id=15"><img class="blog-img-title" src="upload/img/page/122063983655cd3a6f92fd7.jpg"></a>
+                                    <a href="post.php?id=15" class="no-link">Ảnh thực tế Samsung Galaxy S6 edge+</a>
+                                    <div class="time">07-46 AM 14/08/2015</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                                                <div class="blog">
+                                    <a href="post.php?id=14"><img class="blog-img-title" src="upload/img/page/106599310355cc856918cec.jpg"></a>
+                                    <a href="post.php?id=14" class="no-link">iPhone 6C hay Galaxy Note 5 Mini sẽ thống lĩnh phân khúc tầm trung</a>
+                                    <div class="time">06-54 PM 13/08/2015</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                                                <div class="blog">
+                                    <a href="post.php?id=13"><img class="blog-img-title" src="upload/img/page/183239156955cc838d03445.jpg"></a>
+                                    <a href="post.php?id=13" class="no-link">Những hình ảnh đầu tiên về Galaxy Note 5 trước giờ G</a>
+                                    <div class="time">06-46 PM 13/08/2015</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                                                <div class="blog">
+                                    <a href="post.php?id=12"><img class="blog-img-title" src="upload/img/page/184180666855cc81efd2a1f.jpg"></a>
+                                    <a href="post.php?id=12" class="no-link">Một cách quản lý filter trong Laravel</a>
+                                    <div class="time">06-39 PM 13/08/2015</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                                                <div class="blog">
+                                    <a href="post.php?id=11"><img class="blog-img-title" src="upload/img/page/9724005155cc7fce56125.PNG"></a>
+                                    <a href="post.php?id=11" class="no-link">Video những gì Google biết gì về bạn</a>
+                                    <div class="time">06-30 PM 13/08/2015</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                                                <div class="blog">
+                                    <a href="post.php?id=10"><img class="blog-img-title" src="upload/img/page/41767071055cc7b28e7157.jpeg"></a>
+                                    <a href="post.php?id=10" class="no-link">Những ứng dụng chỉnh sửa ảnh cho Windows Phone cực tốt</a>
+                                    <div class="time">06-10 PM 13/08/2015</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                                    </div>
+                    <!--kết thúc tin tức-->
+                    <div class="best-seller">
+                        <div class="best-title">
+                            <label>Tư vấn miễn phí:</label>
+                        </div>
+                        <div class="email-collect text-center" id="email-collect">
+                            <h4>Nhập thông tin của bạn. </h4>
+                            <form role="form" action="" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nhập email hoặc Số điện thoại">
+                                </div>
+                                <input type="submit" class="btn btn-danger" value="Nhận thông tin">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="best-seller">
+                        <div class="qc">
+                            <a href=""><img src="upload/img/qc.jpg"></a>
+                        </div>
+                    </div>
+                    <!--END NEWS-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="main-footer">
+                    <p class="logo-footer"><a href="index.php" class="logo">
+                            <img src="upload/img/moblievn.png" alt="logo"></a><br><br></p>
+                    <h4 class="logo-footer">Địa chỉ: Quang Trung Hải Châu Đà Nẵng</h4>
+                    <p class="logo-footer">Đăng ký doanh nghiệp số 0000000000,
+                        do Sở Kế hoạch và Đầu tư Hà Nội cấp lần đầu ngày 01/01/2015,
+                        thay đổi lần thứ 30 ngày 01/01/2015.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="main-footer">
+                    <h4>Mobile Việt Nam</h4>
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tư vấn sử dụng</a></li>
+                        <li><a href="">Tin tức Moblie VN</a></li>
+                        <li><a href="">Tin tức khuyến mãi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="main-footer">
+                    <h4>DỊCH VỤ &amp; HỖ TRỢ</h4>
+                    <ul>
+                        <li><a href="">Những câu hỏi thường gặp</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                        <li><a href="">Hướng dẫn đặt hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="main-footer">
+                    <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                    <a href="tel:01636551270">Tư vấn bảo hành: <span class="text_red">01636 551 270</span></a><br>
+                    <a href="mailto:tranthang212@gmail.com">Email: <span class="text_red">tranthang212@gmail.com</span></a>
+                    <h4>Chia sẻ</h4>
+                    <div class="icon">
+                        <ul>
+                            <li><a href="http://www.facebook.com/tranthang212" target="_bland"><span class="fa fa-facebook-official fa-3x"></span></a></li>
+                            <li><a href="mailto:tranthang212@gmail.com"><span class="fa fa-google-plus-square fa-3x"></span></a></li>
+                            <li><a href="http://www.twiter.com/kingker93" target="_bland"><span class="fa fa-twitter-square fa-3x"></span></a></li>
+                            <li><a href=""><span class="fa fa-youtube-square fa-3x"></span></a></li>
+                            <li><a href=""><span class="fa fa-instagram fa-3x"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="goTop">
+        <a> <span class="fa fa-5x fa-angle-double-up"></span> </a>
+    </div>
+    <!--< CHAT BOX-->
+    <!--    <div class="phone-bot">
+            <a href="#email-collect"><button class="btn btn-danger">Nhận thông tin</button></a>
+            <a href="#"><button class="btn btn-danger">Tư vấn miễn phí</button></a>
+        </div>-->
+</footer>
+<!--fixed top nav-->
+<nav class="navbar navbar-bg navbar-fixed-top" id="nav-fixed-hidden" style="display: none;">
+    <div class="container">
+        <div class="row no-row">
+            <div class="col-sm-6 col-md-8 poul-left ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-home"></span>
+                </button>
+                <div class="col-sm-3 col-md-3 nav-fixed">
+                    <a href="index.php"><img style="padding-top:5px;" src="upload/img/moblievn-small.png"></a>
+                </div>
+                <div class="col-sm-4 col-md-4 nav-fixed ">
+                    <div class="input-group" id="serch-hiden">
+                        <input type="search" class=" form-control" data-toggle="modal" data-target="#search_modal" placeholder="Tìm kiếm...">
+                        <span class="input-group-addon addon"><span class="fa fa-search"></span>
+                    </span></div>
+                </div>
+                <div class="col-sm-4 col-md-5 nav-fixed">
+                    <div class=" pull-right">
+                        <div class="btn-group">
+                            <div class="btn-group">
+                                                                <a href="" class="btn btn-default" data-toggle="modal" data-target="#login">
+                                        <span class="glyphicon glyphicon-user"></span> <span class="header-login"> Đăng Nhập</span>
+                                        </a>                            </div>
+                            <button class="btn btn-default cart_modal">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <span class="header-login">Giỏ Hàng</span> <kbd class="bg-danger"><span class="total_product text-danger">0</span></kbd>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="product.php" class=""><span class="fa fa-2x fa-mobile header-icon"></span></a></li>
+                        <li> <a href=""><span class="fa fa-tablet fa-2x header-icon"></span></a></li>
+                        <li><a href=""><span class="fa fa-laptop fa-2x header-icon"></span></a></li>
+                        <li><a href=""><span class="fa fa-gift fa-2x header-icon"></span></a></li>
+                        <li><a href="news.php" class=""><span class="fa fa-book fa-2x header-icon"></span></a></li>
+                        <li><a href="contact.php" class="<br />
+<b>Warning</b>:  Missing argument 2 for active_index(), called in D:\xampp\htdocs\mobilevn\include\navbar_fixed_top.php on line 97 and defined in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>258</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: link2 in <b>D:\xampp\htdocs\mobilevn\include\function.php</b> on line <b>262</b><br />
+"><span class="fa fa-question-circle fa-2x header-icon"></span></a></li>
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+</nav><!--modal-->
+<!--loading-->
+<div id="circularG" class="loading_ajax" style="display: none;">
+    <div id="circularG_1" class="circularG"></div>
+    <div id="circularG_2" class="circularG"></div>
+    <div id="circularG_3" class="circularG"></div>
+    <div id="circularG_4" class="circularG"></div>
+    <div id="circularG_5" class="circularG"></div>
+    <div id="circularG_6" class="circularG"></div>
+    <div id="circularG_7" class="circularG"></div>
+    <div id="circularG_8" class="circularG"></div>
+</div>
+<!--end loading-->
+<!--modal login-->
+<div class="modal fade in" id="login" role="dialog" aria-hidden="false" style="display: block; padding-right: 17px;">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Đăng nhập</h4>
+            </div>
+            <div class="modal-body">
+                <div class=" text-center" id="error_lg"></div>
+                <form action="" method="POST" id="form_lg">
+                    <div class="form-group has-success" id="e_p_t_lg">
+                        <label for="name">Email hoặc SDT : <span class="text-danger">*</span> <span id="e_p_e_lg"><i class="fa fa-check text-success"></i></span> <span id="e_p_s_lg">true</span></label>
+                        <div class="input-group">
+                            <input type="text" name="e_p_lg" class="form-control" id="e_p_lg" placeholder="Nhập email hoặc số điện thoại(*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-envelope"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group has-success" id="pass_t_lg">
+                        <label for="name">Mật khẩu: <span class="text-danger">*</span> <span id="pass_e_lg"><i class="fa fa-check text-success"></i></span> <span id="pass_s_lg">true</span></label>
+                        <div class="input-group">
+                            <input type="password" name="pass_lg" class="form-control" id="pass_lg" placeholder="Nhập mật khẩu (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-file"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="tick_lg" value=""> Remember
+                        </label>
+                    </div>
+                    <input type="button" name="login" id="submit_lg" class="btn btn-danger" value="Đăng nhập">
+                    <input type="button" class="btn btn-default pull-right" data-dismiss="modal" value="Thoát">
+                    <div class="margin-top margin-bottom">
+                        <a href="" data-toggle="modal" data-target="#forgotpass" data-dismiss="modal">Quên mật khẩu</a>
+                    </div>
+                    <div class="margin-top margin-bottom">
+                        <a href="" data-toggle="modal" data-target="#register" data-dismiss="modal">Đăng ký tài khoản mới</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end login-->
+<!--register-->
+<div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Đăng ký </h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert-danger text-center" id="error_rg"></div>
+                <form action="" method="POST" id="form_rg">
+                    <div class="form-group" id="name_t_rg">
+                        <label>Họ và tên: <span class="text-danger">*</span> <span id="name_e_rg"></span>  <span id="name_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="name_rg" id="name_rg" class="form-control" placeholder="Nhập tên (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-user"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="email_t_rg">
+                        <label for="name">Email: <span class="text-danger">*</span> <span id="email_e_rg"></span> <span id="email_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="email_rg" class="form-control" id="email_rg" placeholder="Nhập email (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-envelope"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="phone_t_rg">
+                        <label for="name">SDT: <span class="text-danger">*</span> <span id="phone_e_rg"></span><span id="phone_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="phone_rg" class="form-control" id="phone_rg" placeholder="Nhập Số điện thoại (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-phone"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pass_t_rg">
+                        <label for="name">Mật khẩu: <span class="text-danger">*</span> <span id="pass_e_rg"></span> <span id="pass_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="password" name="pass_rg" class="form-control" id="pass_rg" placeholder="Nhập mật khẩu (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-file"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="c_pass_t_rg">
+                        <label for="name">Nhập lại mật khẩu: <span class="text-danger">*</span> <span id="c_pass_e_rg"></span><span id="c_pass_s_rg"></span></label>
+                        <div class="input-group">
+                            <input type="password" name="c_pass_rg" class="form-control" id="c_pass_rg" placeholder="Nhập lại mật khẩu (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-paste"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <input type="button" id="submit_rg" class="btn btn-danger" value="Đăng ký">
+                    <input type="button" class="btn btn-default pull-right" data-dismiss="modal" value="Thoát">
+                </form>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#login" data-dismiss="modal">Đăng nhập</a>
+                </div>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#forgotpass" data-dismiss="modal">Quên mật khẩu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end register-->
+<!--modal fogotpass-->
+<div class="modal fade" id="forgotpass" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Quên mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert-danger text-center" id="error_fg"></div>
+                <form action="" method="POST" id="form_fg">
+                    <div class="form-group" id="email_t_fg">
+                        <label for="name">Email: <span class="text-danger">*</span><span id="email_e_fg"></span> <span id="email_s_fg"></span></label>
+                        <div class="input-group">
+                            <input type="text" name="email_fg" class="form-control" id="email_fg" placeholder="Nhập email (*)" value="">
+                            <span class="input-group-addon "><span class="fa fa-envelope"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <input type="button" id="submit_fg" class="btn btn-danger" value="Gửi">
+                    <input type="button" class="btn btn-default pull-right" data-dismiss="modal" value="Thoát">
+                </form>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#login" data-dismiss="modal">Đăng nhập</a>
+                </div>
+                <div class="margin-top margin-bottom">
+                    <a href="" data-toggle="modal" data-target="#register" data-dismiss="modal">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  fogotpass-->
+<!--modal search-->
+<div class="modal fade" id="search_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Tìm kiếm</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Tìm kiếm với từ khoá: <span id="search_title" class="text-danger"></span></label>
+                    <div class="input-group">
+                        <input type="text" name="search" class="form-control" maxlength="20" id="search" tabindex="1" placeholder="Top tìm kiếm: Iphone, Samsung, Lumia..." value="">
+                        <span class="input-group-addon "><span class="fa fa-search"></span>
+                        </span>
+                    </div>
+                    <div id="search_show">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  search-->
+<!--modal cart -->
+<div class="modal fade" id="cart_modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Giỏ hàng của bạn <span class="total_product">0</span> sản phẩm</h4>
+            </div>
+            <div class="modal-body">
+                <div id="view_cart">
+            <div class="row">
+            <div class="col-md-12 text-center text-danger">
+                <span class="fa fa-5x fa-remove"></span>
+                <h1>Vui lòng chọn sản phẩm</h1>
+            </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-6 col-sm-6 col-md-6">
+                        <button class="btn btn-success btn-block btn-lg" data-dismiss="modal"><i class="fa fa-long-arrow-left"></i> Mua tiếp sản phẩm <i class="fa fa-long-arrow-left"></i></button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                        <button class="btn btn-danger btn-block btn-lg disabled"><i class="fa fa-long-arrow-right"></i> Đặt hàng ngay <i class="fa fa-long-arrow-right"></i></button>
+                </div>
+           </div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  cart-->
+<!--modal order -->
+<div class="modal fade" id="order_modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modal-bg text-center">
+                <button type="button" class="close modal-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Đặt Hàng</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-md-12" id="error_od"></div>
+                    <div class="col-sm-6 col-md-6 ">
+                        <div class="col-md-12 text-center">
+                            <label class="text-info font-150"> Danh sách sản phẩm</label>
+                        </div>
+                        <div id="list_order"></div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 information">
+                        <div class="col-md-12 text-center">
+                            <label class="text-info font-150"> Thông tin khách hàng</label>
+                        </div>
+                        <div id="user_order"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-default btn-block btn-success btn-lg" id="cancel_order"><i class="fa fa-long-arrow-left"></i> Trở về <i class="fa fa-long-arrow-left"></i></button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-default btn-danger btn-block btn-lg" id="order_success"><i class="fa fa-long-arrow-right"></i> Thanh toán <i class="fa fa-long-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  order-->
+<!--modal success -->
+<div class="modal fade" id="success_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center text-success">
+                        <span class="fa fa-5x fa-check-square"></span>
+                        <h1>Đặt hàng thành công</h1>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h4>Cảm cơn bạn <span class="text-danger"><br>
+<b>Warning</b>:  Illegal string offset 'name' in <b>D:\xampp\htdocs\mobilevn\include\modal.php</b> on line <b>249</b><br>
+R</span> đã tin dùng sản phẩm của chúng tôi</h4>
+                        <h4>Chúng tôi sẽ liên hệ với bạn trong vòng 5 phút.<br> Và giao hàng trong 30 phút.</h4>
+                        <a href="" class="btn btn-success continue">Tiếp tục xem </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end  success--><!--chat zompim-->
+
+<div class="modal-backdrop fade in"></div></body></html>

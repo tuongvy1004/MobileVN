@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login page","Verify that the error message is shown when user leaves the password blank","SUCCESS","2022-05-15T20:53:46.545+07:00[Asia/Bangkok]","0.0","12.15"

@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login page","Verify that the error message is shown when user enters password less than 6 characters","SUCCESS","2022-05-15T20:54:12.468+07:00[Asia/Bangkok]","0.0","12.98"

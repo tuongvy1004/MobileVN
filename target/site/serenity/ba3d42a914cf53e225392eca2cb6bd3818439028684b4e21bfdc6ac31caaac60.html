@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+        $('.scenario-result-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 10,
+            "language": {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 10,
+            "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+        });
+
+        $('#evidence-table').DataTable({
+                    searching: false,
+                    paging: false,
+                    info: false
+        });
+
+        $(".feature-coverage-table").DataTable({
+            searching: false,
+            paging: false,
+            info: false
+        });
+
+        $(".feature-coverage-table-with-pagination").DataTable({
+            order: [[0, "asc",]],
+            pageLength: 10,
+            language: {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+    });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Tag 
+                > <span
+                    class="truncate-60">Signup</span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-05-2022 00:04</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='fa fa-tags'></i> Tag: Signup</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div class="test-count-title">
+                                10 test scenarios 
+                                    (including 3 rows of test data)
+                                 |
+                                    <a href="ba3d42a914cf53e225392eca2cb6bd3818439028684b4e21bfdc6ac31caaac60.csv" title="Download CSV"> <i class="fa fa-download"
+                                                                                    title="Download CSV"></i></a>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="fas fa-home"></i> Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="fas fa-tachometer-alt"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                            <div style="width:300px;"
+                                                                 class="chart-container automated-and-manual-results">
+                                                                <div class="ct-chart ct-square"></div>
+                                                            </div>
+                                                            <script>
+
+                                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                                // Our series array that contains series objects or in this case series data arrays
+
+                                                                var series = [{meta: 'Passing tests (automated)', value: 10}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                                // as you saw in the previous example
+                                                                var options = {
+                                                                    width: 350,
+                                                                    height: 300
+                                                                };
+
+
+                                                                new Chartist.Pie('.ct-chart', {
+                                                                    series: series,
+                                                                    labels: labels
+                                                                }, {
+                                                                    plugins: [Chartist.plugins.tooltip()],
+                                                                    donut: true,
+                                                                    donutWidth: 60,
+                                                                    donutSolid: true,
+                                                                    startAngle: 270,
+                                                                    showLabel: true
+                                                                }, options);
+
+
+                                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                                    new Chartist.Pie('.ct-chart', {
+                                                                        series: series,
+                                                                        labels: labels
+                                                                    }, {
+                                                                        plugins: [Chartist.plugins.tooltip()],
+                                                                        donut: true,
+                                                                        donutWidth: 60,
+                                                                        donutSolid: true,
+                                                                        startAngle: 270,
+                                                                        showLabel: true
+                                                                    }, options);
+                                                                });
+
+
+                                                            </script>
+                                                    </div>
+                                                    <div class="col-sm-8">
+
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Scenario Results (including rows of test
+                                                                    data)
+                                                                </th>
+                                                                <th scope="col" colspan="2" class="automated-stats">
+                                                                    Automated
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="c61b8f752d54e0710f93d768fc3f1f97360288d71ed87bfbf966d755ee6fa296.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    </td>
+                                                                <td class="automated-stats">10</td>
+                                                                <td class="automated-stats">100%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-stop-circle-o pending-icon'></i>&nbsp;Pending
+                                                                    </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-fast-forward skip-icon'></i>&nbsp;Skipped
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td colspan="3"><a
+                                                                            href="dc4effe30448ac16cb01f71d085c3fe65fd81b757d9a7d8debeb7e8c8bcd04f3.html"><i
+                                                                            class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-chain-broken compromised-icon'></i>&nbsp;Compromised
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr class="summary-stats">
+                                                                <td class="aggregate-result-count">Total</td>
+                                                                <td class="automated-stats">10</td>
+                                                                <td class="automated-stats"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Execution Time</th>
+                                                                <th>Clock Time</th>
+                                                                <th>Fastest Test</th>
+                                                                <th>Slowest Test</th>
+                                                                <th>Average Execution Time</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td> 2m 21s</td>
+                                                                <td> 2m 15s</td>
+                                                                <td>11s</td>
+                                                                <td>21s</td>
+                                                                <td>14s</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Functional Coverage Overview</h3>
+
+                                                            <table class="table feature-coverage-table" id="Feature">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>Feature</th>
+                                                                    <th style="" width:7.5em;
+                                                                    ">Scenarios</th>
+                                                                    <th style="" width:7.5em;
+                                                                    ">% Pass</th>
+                                                                    <th style="" width:7.5em;
+                                                                    ">Result</th>
+                                                                    <th>Coverage</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                                <a href="8163e8bbe66a6fc9f1e8650892e43048852b45e88da13980e9b51f97f90bed32.html">Sign up form</a>
+                                                                        </td>
+                                                                        <td>10</td>
+                                                                        <td>100%</td>
+                                                                        <td>
+                                                                                <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                    <div class="progress-bar"
+                                                                                         role="progressbar"
+                                                                                         style="width: 100%; background-color: #30cb23"
+                                                                                         aria-valuenow="10"
+                                                                                         title="100% success"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                                Search function
+                                                                        </td>
+                                                                        <td>0</td>
+                                                                        <td>0%</td>
+                                                                        <td>
+                                                                                <i class="fa fa-stop-circle-o pending-icon"></i>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                                Login page
+                                                                        </td>
+                                                                        <td>0</td>
+                                                                        <td>0%</td>
+                                                                        <td>
+                                                                                <i class="fa fa-stop-circle-o pending-icon"></i>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                                Add to cart
+                                                                        </td>
+                                                                        <td>0</td>
+                                                                        <td>0%</td>
+                                                                        <td>
+                                                                                <i class="fa fa-stop-circle-o pending-icon"></i>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                                Order Page
+                                                                        </td>
+                                                                        <td>0</td>
+                                                                        <td>0%</td>
+                                                                        <td>
+                                                                                <i class="fa fa-stop-circle-o pending-icon"></i>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Tags</h3>
+
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div>
+                                                                    <a href="ba3d42a914cf53e225392eca2cb6bd3818439028684b4e21bfdc6ac31caaac60.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Signup&nbsp;&nbsp;&nbsp;10</span>
+                                                                    </a>
+                                                                    <a href="0e5689e2094b80a6f6656c2f127fbeed8226a61e111afb587d2025353b6622ba.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Signuplink&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="1ccfb5a499b8300c3dfba2e6baca6260e754a31aa04771a774e9f3df55a8b745.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 001&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="d311f30c110dd6d1a3b4b4218157b2926c1d22d15ddff17a66f27ef17dc1c68b.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Allfields&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="d4c5b6fa6775ba68faae5c5dea6e467b44cb4af8cf6d94500d1bb8bd4192d196.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG-002&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="b89d697491d6893fdebba6a867fe74b7840f648861b69dc9b03c66b9f2dd2d26.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Fullname&nbsp;&nbsp;&nbsp;3</span>
+                                                                    </a>
+                                                                    <a href="3d1059bb2390a4824663e90c7a2ca51f0490ac2baa3bb67d5a84c86e3796a968.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Blank&nbsp;&nbsp;&nbsp;4</span>
+                                                                    </a>
+                                                                    <a href="6b827461b4a490df88d7305c73f7e6187d17f513dfff8794cbdc03eaddde6873.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 003&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="ca535e2e810172438957b81b86d86c0e7de09acb39dca16cb3116898b5e98f8f.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Invaliddata&nbsp;&nbsp;&nbsp;2</span>
+                                                                    </a>
+                                                                    <a href="6d773019f3fc945c4429f937416cc7205f6a2c184a13b39c00b69202391fef5f.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 004&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="40cccd0ed8b44713456018dabb8fe4c6e8e4d247f869bfa9fe58cdab3afe5945.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Onlyspaces&nbsp;&nbsp;&nbsp;2</span>
+                                                                    </a>
+                                                                    <a href="aab7e3e4da7f5fe87d6e7fe338cb282c995fed63896b72d3fc8d8e70caaf215c.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 005&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="d8116bc0226f1015e9dd32a1236d529a72b8d9785187c10c5d5c7968fea90921.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Email&nbsp;&nbsp;&nbsp;3</span>
+                                                                    </a>
+                                                                    <a href="bbe392bfe60b6202534a6f61093f0f85992f9fbf9f291a1013d8c4cbc3257393.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 006&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="2830492ca3c665ec6758022e0b44cc5b28ee0baaf8e390d1637a16282f00ec1f.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 007&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="17cab650981e3b20a3b889bdc253ace57fd918ec77406efa1b3024b94bd5633a.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 008&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="dee099fda08f9f67a28863e7f2cd009e2a24c514e2ad46cf5a599b8bbcad214b.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 009&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="10466d8ea3dfe808f324d7a67d87bcb06c9beba72e8125b467006d1af862eb0b.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Phonenumber&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="96886aa17cb4924058a4d8bcca8305db32a7bd07c93f202ae8d85c756c6a65da.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Password&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="9e1fe01a0f8fd1cc457ce172efc46cbbc106d3d35b488731d3137ccb853c3c11.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#1D9918; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> SIG 010&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="56b13d677bee8ec4455213e5ef1efcf272489621d09bbe2f956e37cc1ce92de1.html">Verify that the Sign up popup appears when user clicks the Sign up link</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>18:47:37</td>
+                                                    <td>00:21</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="14d06676b87a6e27b868ab576b7916fd210e1025d95198914c46c3c523f3d839.html">Verify that user is able to sign up when entering valid inputs in all fields</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>18:47:59</td>
+                                                    <td>00:17</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="5351d8cb8a01842cfe943ce7ff1e1a62072ec3b748007aa7072aa0f566230b82.html">Verify that the error message is shown when user leaves the full name blank</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>18:48:23</td>
+                                                    <td>00:12</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="2bea4727657c99981aff0de14b452ed94a19b6465550d187b737d179f583ff24.html">Verify that the error message is shown when user enters data less than 6 characters</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>18:48:35</td>
+                                                    <td>00:12</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="73bcd9acb0d6a12429171ef7ff302f04623a09fd00f9247912083be48d789a0a.html">Verify that the error message is shown when user enters only spaces in the Full name field</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>18:48:48</td>
+                                                    <td>00:11</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="d76e1ab283171d3e7ff2343b25281e425469ba2c5d68b5754cb89ff4f5ef1d4a.html">Verify that the error message is shown when user enters email in the wrong format</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>18:49:00</td>
+                                                    <td>00:12</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="d47e3e5771fcba85a5d47e04d040eba77335f7294d84fd9d11cefa59a0a2c462.html">Verify that the error message is shown when user leaves the email field blank</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>18:49:13</td>
+                                                    <td>00:11</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="62addfa4bb4e4e1bfed7c222324845a6751bc306e2c61e9ef52795fbe8f71696.html">Verify that the error message is shown when user enters only spaces in the email field</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>18:49:25</td>
+                                                    <td>00:13</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="916784165f55b7cc83835ccac971b7fc99963a40a7290c7b9483046c5d83d20f.html">Verify that the error message is shown when user leaves phone number field blank</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>18:49:39</td>
+                                                    <td>00:13</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="557ef484c4dbbc29037f22e81559c62aeba4dfe249cecccdac6291dd926f2250.html">Sign up form</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4a78816961dfb742f63e2fe87e4ad7e441e80f5220c53dd9a5180d2379ff6e0b.html">Verify that the error message is shown when user leaves password field blank</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>18:49:52</td>
+                                                    <td>00:14</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-edit"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 2.0.12</span>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
